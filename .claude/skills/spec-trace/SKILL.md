@@ -156,7 +156,7 @@ searchfox-cli --spec-refs '<url>'
   listing the hops it covers.
 - Add rejected algorithms as `(not reached)` rows. For a NOT REACHED verdict they carry the weight:
   the code exists and simply is not wired to this route.
-- Discard matches under `.claude/skills/` and `.agents/skills/`. In-tree skill documentation quotes
+- Discard matches under `.claude/skills/`. In-tree skill documentation quotes
   spec URLs in its examples and is indexed as code, in both copies.
 
 ## Effects data may be temporarily unavailable

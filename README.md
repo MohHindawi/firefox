@@ -1,18 +1,19 @@
-![Firefox Browser](./docs/readme/readme-banner.svg)
+# Browser (Firefox fork)
 
-[Firefox](https://firefox.com/) is a fast, reliable and private web browser from the non-profit [Mozilla organization](https://mozilla.org/).
+A hard fork of [Mozilla Firefox](https://firefox.com/) (mozilla-central), being reshaped into our own browser for **Windows, Linux and Android**.
 
-### Contributing
+Project notes, decisions and the feature catalogue live in [`.docs/`](.docs/README.md).
 
-To learn how to contribute to Firefox read the [Firefox Contributors' Quick Reference document](https://firefox-source-docs.mozilla.org/contributing/contribution_quickref.html).
+### Building
 
-We use [bugzilla.mozilla.org](https://bugzilla.mozilla.org/) as our issue tracker, please file bugs there.
+```
+./mach bootstrap
+./mach build
+./mach run
+```
 
-### Resources
+See [`.docs/TechStack.md`](.docs/TechStack.md) for the stack and environment requirements. Upstream build documentation is at [Firefox Source Docs](https://firefox-source-docs.mozilla.org/).
 
-* [Firefox Source Docs](https://firefox-source-docs.mozilla.org/) is our primary documentation repository
-* Nightly development builds can be downloaded from [Firefox Nightly page](https://www.mozilla.org/firefox/channel/desktop/#nightly)
+### License
 
-If you have a question about developing Firefox, and can't find the solution
-on [Firefox Source Docs](https://firefox-source-docs.mozilla.org/), you can try asking your question on Matrix at
-chat.mozilla.org in the [Introduction channel](https://chat.mozilla.org/#/room/#introduction:mozilla.org).
+Mozilla Public License 2.0, see [LICENSE](LICENSE).

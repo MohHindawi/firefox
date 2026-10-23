@@ -112,7 +112,6 @@ rsync_filter_list = """
 + /.eslintrc*.js
 + /.flake8
 + /.gitignore
-+ /.hgignore
 + /.lldbinit
 + /.prettierignore
 + /.prettierrc
