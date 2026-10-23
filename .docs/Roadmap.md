@@ -25,7 +25,8 @@
 - [ ] Incremental `#ifdef XP_MACOSX` / `__APPLE__` / JS `macosx` cleanup
 
 ## Phase 3: Features
-- [ ] Fill in the Decision column in Features.md
+- [ ] Fill in the Decision checklists in Features.md
+- [ ] Neutralise telemetry (see "How we neutralise it" in Features.md)
 - [ ] Disable via configure flags, prefs and policies
 - [ ] Delete removed features with their registrations and tests
 - [ ] Android: strip Adjust, Sentry, Firebase, Play, MARS, Pocket as decided
