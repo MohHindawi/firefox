@@ -509,19 +509,6 @@ test-manifest:
             - 'tools/lint/test/test_manifest_toml.py'
             - 'tools/lint/test-manifest-toml/**'
 
-review-context-toml:
-    description: Validate review-context.toml against the review context schema
-    treeherder:
-        symbol: misc(review-context)
-    run:
-        mach: lint -v -l review-context-toml -f treeherder -f json:/builds/worker/mozlint.json .
-    when:
-        files-changed:
-            - 'review-context.toml'
-            - 'tools/lint/review-context-toml.yml'
-            - 'tools/lint/python/review_context_schema.py'
-            - 'tools/lint/python/review_context_toml.py'
-
 wptlint-gecko:
     description: web-platform-tests linter
     treeherder:
@@ -919,33 +906,6 @@ trojan-source:
             - '**/*.py'
             - '**/*.rs'
             - 'tools/lint/trojan-source.yml'
-
-ignorefile-test:
-    description: .gitignore vs .hgignore consistency check
-    platform: lint/opt
-    treeherder:
-        symbol: ignorefile
-    run:
-        mach: lint -v -l ignorefile .gitignore .hgignore
-    when:
-        files-changed:
-            - '.gitignore'
-            - '.hgignore'
-
-agent-skills-sync:
-    description: Keep .claude/skills and .agents/skills in sync
-    platform: lint/opt
-    treeherder:
-        symbol: agent-skills-sync
-    run:
-        mach: lint -v -l agent-skills-sync -f treeherder -f json:/builds/worker/mozlint.json .claude/skills .agents/skills
-    when:
-        files-changed:
-            - '.claude/skills/**'
-            - '.agents/skills/**'
-            - 'tools/lint/agent-skills-sync.yml'
-            - 'tools/lint/agent-skills-sync/**'
-
 
 toolchain-parity:
     description: Ensure local-toolchain/local-fetch tasks cover all tier-1 host platforms

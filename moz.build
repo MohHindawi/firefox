@@ -8,9 +8,6 @@ with Files("AUTHORS"):
 with Files("LICENSE"):
     BUG_COMPONENT = ("mozilla.org", "Licensing")
 
-with Files("mots.yaml"):
-    BUG_COMPONENT = ("Conduit", "mots")
-
 with Files("CODEOWNERS"):
     BUG_COMPONENT = ("Conduit", "mots")
 
@@ -33,15 +30,6 @@ with Files(".gitattributes"):
     BUG_COMPONENT = ("Firefox Build System", "General")
 
 with Files(".gitignore"):
-    BUG_COMPONENT = ("Firefox Build System", "General")
-
-with Files(".hgignore"):
-    BUG_COMPONENT = ("Firefox Build System", "General")
-
-with Files(".hgtags"):
-    BUG_COMPONENT = ("Firefox Build System", "General")
-
-with Files(".watchmanconfig"):
     BUG_COMPONENT = ("Firefox Build System", "General")
 
 with Files("docs/**"):
@@ -103,13 +91,7 @@ with Files("*gradle*"):
 with Files(".mcp.json"):
     BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
 
-with Files(".agents/**"):
-    BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
-
 with Files(".claude/**"):
-    BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
-
-with Files(".codex/**"):
     BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
 
 with Files("*.json"):
@@ -134,9 +116,6 @@ with Files("AGENTS.md"):
 with Files("CLAUDE.md"):
     BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
 
-with Files("review-context.toml"):
-    BUG_COMPONENT = ("Developer Infrastructure", "AI for Development")
-
 with Files("nsprpub/**"):
     BUG_COMPONENT = ("NSPR", "NSPR")
 
@@ -152,14 +131,8 @@ with Files(".editorconfig"):
 with Files(".lldbinit"):
     BUG_COMPONENT = ("Developer Infrastructure", "Developer Environment Integration")
 
-with Files(".vscode/**"):
-    BUG_COMPONENT = ("Developer Infrastructure", "Developer Environment Integration")
-
 with Files(".zed/**"):
     BUG_COMPONENT = ("Developer Infrastructure", "Developer Environment Integration")
-
-with Files(".idea/**"):
-    BUG_COMPONENT = ("Firefox for Android", "Tooling")
 
 with Files(".ycm_extra_conf.py"):
     BUG_COMPONENT = ("Developer Infrastructure", "Developer Environment Integration")
@@ -167,26 +140,11 @@ with Files(".ycm_extra_conf.py"):
 with Files(".git-blame-ignore-revs"):
     BUG_COMPONENT = ("Developer Infrastructure", "General")
 
-with Files(".hg-annotate-ignore-revs"):
-    BUG_COMPONENT = ("Developer Infrastructure", "General")
-
 with Files(".mailmap"):
-    BUG_COMPONENT = ("Developer Infrastructure", "General")
-
-with Files(".trackerignore"):
     BUG_COMPONENT = ("Developer Infrastructure", "General")
 
 with Files(".arcconfig"):
     BUG_COMPONENT = ("Conduit", "moz-phab")
-
-with Files(".github/**"):
-    BUG_COMPONENT = ("Conduit", "General")
-
-with Files(".github/workflows/pr-handler.yml"):
-    BUG_COMPONENT = ("Conduit", "Lando")
-
-with Files(".lando.ini"):
-    BUG_COMPONENT = ("Conduit", "Lando")
 
 with Files("**/Makefile.in"):
     BUG_COMPONENT = ("Firefox Build System", "General")
@@ -361,7 +319,7 @@ SPHINX_TREES["jsloader"] = "docs/jsloader"
 
 SPHINX_TREES["ai-agent-tools"] = "docs/ai-agent-tools"
 
-SPHINX_TREES["ai-agent-tools/skills"] = ".agents/skills"
+SPHINX_TREES["ai-agent-tools/skills"] = ".claude/skills"
 
 include("build/templates.mozbuild")
 

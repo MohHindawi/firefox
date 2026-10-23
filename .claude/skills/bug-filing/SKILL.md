@@ -3,7 +3,7 @@ name: bug-filing
 description: File a Bugzilla bug for Firefox/Gecko work, or draft a bug summary and description. Use when the user asks to file a bug, wants a bug summary/description for a change, or needs to report a defect/enhancement/task. Determines the product and component with `mach file-info`, drafts the summary and description, and opens a prefilled enter_bug.cgi form in the browser for the user to submit.
 allowed-tools:
   - Bash(./mach file-info:*)
-  - Bash(python3 .agents/skills/bug-filing/file-bug.py:*)
+  - Bash(python3 .claude/skills/bug-filing/file-bug.py:*)
   - Bash(python3 .claude/skills/bug-filing/file-bug.py:*)
 ---
 
@@ -70,7 +70,7 @@ created under their own account with a chance to review and adjust.
    `enter_bug.cgi` field as a `field=value` argument; it URL-encodes the values and
    opens the form in the browser (cross-platform, so Linux, macOS, and Windows all work):
    ```
-   python3 .agents/skills/bug-filing/file-bug.py 'product=<P>' 'component=<C>' \
+   python3 .claude/skills/bug-filing/file-bug.py 'product=<P>' 'component=<C>' \
        'bug_type=<T>' 'short_desc=<summary>' 'comment=<description>'
    ```
    - Single-quote every `field=value` argument.

@@ -117,8 +117,6 @@ lint.exclude = [
   "testing/marionette/harness/marionette_harness/tests/**",
   "testing/mochitest/pywebsocket3/**",
   "testing/mozharness/configs/test/test_malformed.py",
-  # Vendored verbatim from bugbug; style is owned upstream.
-  "tools/lint/python/review_context_schema.py",
   "tools/crashreporter/*.configure",
   ".ycm_extra_conf.py",
 ]
@@ -178,5 +176,4 @@ exclude = [
   "gfx/harfbuzz/src/meson.build",
   "python/mozbuild/mozbuild/test/frontend/data/reader-error-syntax/moz.build",
   "testing/mozharness/configs/test/test_malformed.py",
-  "tools/lint/python/review_context_schema.py",
 ]

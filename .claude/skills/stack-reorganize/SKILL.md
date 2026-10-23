@@ -28,7 +28,7 @@ allowed-tools:
   - Bash(sort:*)
   - Bash(tr:*)
   - Bash(bash .claude/skills/stack-reorganize/scripts/git-churn.sh:*)
-  - Bash(bash .agents/skills/stack-reorganize/scripts/git-churn.sh:*)
+  - Bash(bash .claude/skills/stack-reorganize/scripts/git-churn.sh:*)
   - Bash(jj log:*)
   - Bash(jj show:*)
   - Bash(jj diff:*)
